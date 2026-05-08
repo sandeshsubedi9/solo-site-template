@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | Vivalis Official Site</title>
+  <title>Privacy Policy | PRODUCT NAME Official Site</title>
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +16,53 @@
 
 <body class="legal-page">
 
-  <!-- Navbar -->
+  <!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
   <nav id="navbar">
+    <div id="scroll-progress"></div>
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          Vivalis<span>.</span>
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" id="nav-logo">
+          PRODUCT<span>.</span>
         </a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
+
+        <!-- Desktop links -->
+        <div class="nav-links" id="nav-links">
           <a href="index.html#features">Features</a>
+          <a href="index.html#ingredients">Ingredients</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#faq">FAQ</a>
           <a href="index.html#pricing">Pricing</a>
         </div>
-        <a href="https://secureofficialsite.store/buy-vivalis" class="btn-primary-cta">Order Now</a>
+
+        <!-- Desktop CTA + hamburger -->
+        <div class="nav-cta-wrap">
+          <a href="order.html" class="btn-primary-cta" id="nav-cta-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            Order Now
+          </a>
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#ingredients">Ingredients</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="order.html" class="btn-primary-cta">Order Now</a>
     </div>
   </nav>
 
@@ -66,20 +99,90 @@
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
   <footer id="footer">
     <div class="container">
+      <div class="footer-disclaimer">
+        <h2>Final Thoughts</h2>
+        <p>The material presented on this website is intended purely for educational and informational use and should
+          not be interpreted as professional medical guidance. PRODUCT NAME is a dietary supplement created to promote
+          general health. It is not designed to diagnose, treat, remedy, or prevent any disease. Results can differ
+          between individuals.</p>
+      </div>
+
+      <hr class="footer-divider">
+
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="disclaimer.html">Disclaimer</a>
         <a href="terms-and-conditions.html">Terms & Conditions</a>
       </div>
+
       <div class="footer-copy">
-        © 2026 Vivalis All Rights Reserved.
+        © 2026 PRODUCT NAME All Rights Reserved.
       </div>
     </div>
   </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script>
+    // ── Navbar Scroll Effect ──
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      const scrollBtn = document.getElementById('scroll-top');
+      const progressBar = document.getElementById('scroll-progress');
+
+      // Scroll progress bar logic
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (progressBar) progressBar.style.width = scrolled + "%";
+
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add('visible');
+      } else {
+        scrollBtn.classList.remove('visible');
+      }
+    });
+
+    // ── Scroll to Top ──
+    document.getElementById('scroll-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Mobile Menu Toggle ──
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileMenu = document.getElementById('nav-mobile');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 </html>
