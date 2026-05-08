@@ -408,7 +408,7 @@ h6 {
 
 /* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #hero {
-  background: linear-gradient(135deg, #f0f8f4 0%, #fffbf0 50%, #fdf6e3 100%);
+  background: linear-gradient(135deg, #f0f8f4 0%, #fafbff 45%, #f5f0ff 100%);
   min-height: calc(100vh - 68px);
   /* Full screen height minus navbar */
   display: flex;
@@ -427,18 +427,6 @@ h6 {
   width: 580px;
   height: 580px;
   background: radial-gradient(circle, rgba(10, 92, 54, 0.08) 0%, transparent 65%);
-  pointer-events: none;
-}
-
-/* Soft amber blob — bottom right (ties to CTA) */
-#hero::after {
-  content: '';
-  position: absolute;
-  bottom: -80px;
-  right: -100px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.07) 0%, transparent 65%);
   pointer-events: none;
 }
 
