@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>PRODUCT NAME Official Site | Tagline Here</title>
+  <meta name="description" content="Short product description for search engines. Keep under 160 characters.">
+  <meta name="keywords" content="product name, product name official website, product name supplement">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A5C36">
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:title" content="PRODUCT NAME Official Site | Tagline Here">
+  <meta property="og:description" content="Short product description for social sharing.">
+  <meta property="og:image" content="images/index-img.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PRODUCT NAME">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ── Twitter ── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PRODUCT NAME Official Site | Tagline Here">
+  <meta name="twitter:description" content="Short product description for social sharing.">
+  <meta name="twitter:image" content="images/index-img.webp">
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div id="scroll-progress"></div>
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" id="nav-logo">
+          PRODUCT<span>.</span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="nav-links" id="nav-links">
+          <a href="#features">Features</a>
+          <a href="#ingredients">Ingredients</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+
+        <!-- Desktop CTA + hamburger -->
+        <div class="nav-cta-wrap">
+          <a href="order.html" class="btn-primary-cta" id="nav-cta-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            Order Now
+          </a>
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#features">Features</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing">Pricing</a>
+      <a href="order.html" class="btn-primary-cta">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="section-label green">★ OFFICIAL WEBSITE</div>
+
+          <h1 class="hero-title">
+            Support Healthy <em>Blood Sugar</em> Naturally with PRODUCT NAME
+          </h1>
+
+          <p class="hero-desc">
+            PRODUCT NAME Blood Support Drops are a natural blood sugar supplement
+            designed to help support healthy glucose levels, balanced metabolism,
+            and steady daily energy. Made with botanically derived ingredients,
+            crafted for people dealing with modern lifestyle challenges.
+          </p>
+
+          <!-- Urgency bar -->
+          <div class="hero-urgency">
+            <div class="urgency-text">
+              <span class="urgency-label">Limited Time Offer</span>
+              <span class="urgency-sub">Hurry! Offer ends in:</span>
+            </div>
+            <div class="urgency-timer" id="countdown-timer">03:00</div>
+          </div>
+
+          <!-- CTA buttons -->
+          <div class="hero-cta-row">
+            <a href="order.html" class="btn-primary-cta" id="hero-buy-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" style="width:18px;height:18px">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              </svg>
+              Buy Now — Just $49
+            </a>
+            <a href="#about" class="btn-outline-cta" id="hero-site-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" style="width:16px;height:16px">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4" />
+                <path d="M12 8h.01" />
+              </svg>
+              Learn More
+            </a>
+          </div>
+          <!-- Trust badges -->
+        </div>
+
+        <!-- Right: Product image -->
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img src="../images/index-img.webp" alt="PRODUCT NAME Product Bottle" id="hero-product-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     FEATURES — What Sets Us Apart
+════════════════════════════════════════════════════ -->
+  <section id="features">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label">✦ WHY CHOOSE US</div>
+        <h2>What Sets PRODUCT NAME Apart?</h2>
+        <p>Our commitment to quality, purity, and effectiveness makes us a leader in natural blood support.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card" id="feature-nongmo">
+          <img src="../images/gmo.webp" alt="Non-GMO Icon">
+          <h3>100% Non-GMO Sourced</h3>
+          <p>Every component comes from verified non-GMO sources, ensuring a wholesome, unmodified, and trustworthy
+            formula that prioritizes purity in every dose.</p>
+        </div>
+
+        <div class="feature-card" id="feature-natural">
+          <img src="../images/natural.webp" alt="Natural Formula Icon">
+          <h3>Botanical-Origin Formula</h3>
+          <p>Harnessing the strength of plant-sourced compounds, our formula assists in nurturing glucose harmony and
+            comprehensive daily vitality through a gentle, earth-derived approach.</p>
+        </div>
+
+        <div class="feature-card" id="feature-gmp">
+          <img src="../images/gmp.webp" alt="GMP Certified Icon">
+          <h3>Rigorous GMP Standards</h3>
+          <p>Manufactured inside GMP-certified laboratories, passing through demanding quality inspections to guarantee
+            integrity, cleanliness, and reliable strength in every production cycle.</p>
+        </div>
+
+        <div class="feature-card" id="feature-fda">
+          <img src="../images/fda.webp" alt="FDA Registered Icon">
+          <h3>FDA-Registered Facility</h3>
+          <p>Created within an FDA-registered production environment, following established safety and manufacturing
+            protocols for dietary supplements—delivering quality that inspires genuine confidence.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     ABOUT — Understanding the Formula
+════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image block -->
+        <div class="about-img-block">
+          <div class="about-img-frame">
+            <img src="../images/banner-img.webp" alt="Formula Banner">
+          </div>
+          <div class="about-img-caption">Editorial: Clinical Formula Composition</div>
+        </div>
+
+        <!-- Text block -->
+        <div class="about-text">
+          <div class="section-label green">ABOUT</div>
+          <h2 class="underline-heading">Understanding the PRODUCT NAME Formula</h2>
+
+          <p>PRODUCT NAME is a cutting-edge, nature-inspired blood support supplement engineered to foster balanced
+            glucose readings, strengthen metabolic resilience, and deliver unwavering energy across your entire day.
+            Many PRODUCT NAME reviews confirm that with the demands of contemporary living — from ultra-processed meals
+            and emotional pressure to prolonged sitting — having reliable blood sugar support matters.</p>
+
+          <p>Each active ingredient has been carefully selected. This meticulously developed formula incorporates
+            targeted botanicals celebrated for their capacity to promote efficient glucose processing, calibrated
+            insulin signaling, and robust cellular energy generation. Does PRODUCT NAME work? By empowering the body to
+            handle glucose with greater precision, these blood support drops foster reliable energy output and smooth
+            blood sugar stability.</p>
+
+          <p>When incorporated consistently into a health-conscious routine, PRODUCT NAME assists in sustaining daily
+            vigor, calibrated metabolic processes, and prolonged wellness. It is offered exclusively through this
+            authorized website. Presented in convenient daily drops, it functions to bolster glucose equilibrium and
+            organic metabolic pathways.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     RESEARCH — The Science
+════════════════════════════════════════════════════ -->
+  <section id="research">
+    <div class="container">
+      <div class="research-grid">
+
+        <!-- Text + Stats -->
+        <div class="research-text">
+          <div class="section-label">🔬 THE SCIENCE</div>
+          <h2>The Science of Blood Support</h2>
+          <p>PRODUCT NAME is built on a foundation of scientific research into botanical insulin-mimetics and glucose
+            transporters. Our formula combines ancient wisdom with modern extraction techniques to deliver a product
+            that doesn't just work, but excels in purity and bioavailability.</p>
+
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-number">99.9%</div>
+              <div class="stat-label">Purity Level</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">High</div>
+              <div class="stat-label">Bioavailability</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Safety Tested</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research image -->
+        <div class="research-img">
+          <img src="../images/banner-img.webp" alt="Laboratory Research">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     BENEFITS
+════════════════════════════════════════════════════ -->
+  <section id="benefits">
+    <div class="container">
+      <div class="benefits-header">
+        <div class="section-label" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.9);">✦ KEY ADVANTAGES
+        </div>
+        <h2>Powerful Advantages of PRODUCT NAME</h2>
+        <p>Masterfully designed to encourage balanced glucose levels, optimized metabolic function, and all-day
+          endurance with consistent daily usage.</p>
+      </div>
+
+      <div class="benefits-list">
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🩸</div>
+          <div class="benefit-content">
+            <h3>Encourages Optimal Glucose Levels</h3>
+            <p>Harmonizes with your body's innate regulatory systems to foster consistent and balanced blood sugar
+              readings across every hour of the day.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">⚡</div>
+          <div class="benefit-content">
+            <h3>Nurtures Healthy Insulin Activity</h3>
+            <p>Assists in maintaining responsive insulin signaling, enabling the body to channel glucose into productive
+              energy and achieve sustained metabolic equilibrium.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🔋</div>
+          <div class="benefit-content">
+            <h3>Delivers Dependable All-Day Vitality</h3>
+            <p>Through glucose-balancing properties, helps power consistent energy levels and sharpens mental acuity
+              from morning through evening.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🍬</div>
+          <div class="benefit-content">
+            <h3>Tames Unwanted Sugar Urges</h3>
+            <p>Stabilized glucose dynamics help suppress persistent sweet tooth tendencies, paving the way for more
+              mindful and nutritious dietary choices.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🔥</div>
+          <div class="benefit-content">
+            <h3>Elevates Metabolic Efficiency</h3>
+            <p>Helps fine-tune the body's glucose conversion pathways, contributing to a well-oiled metabolic engine and
+              heightened daily dynamism.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🌿</div>
+          <div class="benefit-content">
+            <h3>Builds Lasting Health Foundations</h3>
+            <p>Habitual use contributes to prolonged metabolic resilience, balanced energy throughout every season, and
+              a solid platform for enduring total-body wellness.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     INGREDIENTS — Nature's Power
+════════════════════════════════════════════════════ -->
+  <section id="ingredients">
+    <div class="container">
+      <div class="ingredients-header">
+        <div class="section-label">🌿 PURE INGREDIENTS</div>
+        <h2>Purposefully Chosen Natural Ingredients</h2>
+        <p>Six powerful botanicals selected for their specific role in supporting glucose metabolism, antioxidant
+          protection, and energy balance.</p>
+      </div>
+
+      <div class="ingredients-grid">
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-schisandra.png" alt="Schisandra">
+          </div>
+          <h3>Schisandra: Balance Tonic</h3>
+          <p>Revered in traditional herbalism for centuries, acts as a multi-tasking adaptogen that encourages healthy
+            liver activity and fosters internal equilibrium.</p>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-amla.png" alt="Amla">
+          </div>
+          <h3>Amla: Nutrient Rejuvenator</h3>
+          <p>Also called Indian gooseberry, Amla delivers exceptional antioxidants that fortify digestive processes and
+            reinforce immune defenses.</p>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-cacao.png" alt="Theobroma Cacao">
+          </div>
+          <h3>Cacao: Cardiovascular Fuel</h3>
+          <p>Brimmed with heart-friendly flavonoids, Cacao strengthens vascular health and bolsters smooth blood flow
+            for daily vitality.</p>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-rhodiola.png" alt="Rhodiola">
+          </div>
+          <h3>Rhodiola: Stamina Fuel</h3>
+          <p>A celebrated adaptogenic herb, Rhodiola empowers the body to navigate daily pressures and sustains balanced
+            energy reserves.</p>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-maqui.png" alt="Maqui Berry">
+          </div>
+          <h3>Maqui Berry: Radical Fighter</h3>
+          <p>Sourced from pristine landscapes, Maqui Berry is loaded with potent anthocyanins that shield cells from
+            oxidative damage.</p>
+        </div>
+
+        <div class="ingredient-card">
+          <div class="ingredient-img-wrap">
+            <img src="../images/ingredient-haematococcus.png" alt="Haematococcus">
+          </div>
+          <h3>Haematococcus: Cellular Shield</h3>
+          <p>This microalga yields astaxanthin, guarding cellular structures against environmental wear and promoting
+            graceful aging.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     MONEY-BACK GUARANTEE
+════════════════════════════════════════════════════ -->
+  <section id="guarantee">
+    <div class="container">
+      <div class="guarantee-box">
+        <div class="guarantee-badge-col">
+          <img src="../images/money-back-guarantee-..webp" alt="60-Day Guarantee">
+          <div class="guarantee-safe-label">100% Risk Free</div>
+        </div>
+        <div class="guarantee-text">
+          <h2>Try PRODUCT NAME Risk-Free For 60 Days</h2>
+          <p>We are so confident in the metabolic power of PRODUCT NAME that we back every single bottle with our
+            ironclad 60-day money-back guarantee. If you are not absolutely wowed by the results, simply contact our
+            support team for a full refund—no questions asked.</p>
+          <a href="order.html" class="btn-primary-cta">
+            Grab Your Risk-Free Package
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" style="width:18px;height:18px">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     PRICING
+════════════════════════════════════════════════════ -->
+  <section id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <div class="section-label">💰 SELECT YOUR BUNDLE</div>
+        <h2>Select Your Dynamic Package</h2>
+        <p>Choose the bundle that best fits your needs and start your journey today.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Starter -->
+        <div class="pricing-card">
+          <h3>Starter Package</h3>
+          <div class="pricing-bottles">
+            <img src="../images/default.png" alt="1 Bottle">
+            <div class="qty-badge">X1</div>
+          </div>
+          <div class="price-amount"><sup>$</sup>69</div>
+          <div class="price-per">/ Per Bottle</div>
+          <ul class="pricing-features">
+            <li>30 Day Supply</li>
+            <li>60-Day Guarantee</li>
+          </ul>
+          <a href="order.html" class="pricing-buy-btn btn-dark">Buy Now For $69</a>
+          <div class="pricing-lock">🔒 Secure 60-Day Guarantee</div>
+        </div>
+
+        <!-- Best Value (Featured) -->
+        <div class="pricing-card featured">
+          <div class="featured-badge">MOST POPULAR</div>
+          <h3>Best Value Bundle</h3>
+          <div class="pricing-bottles">
+            <img src="../images/default.png" alt="6 Bottles" style="transform: scale(1.1)">
+            <div class="qty-badge">X6</div>
+          </div>
+          <div class="price-amount"><sup>$</sup>49</div>
+          <div class="price-per">/ Per Bottle</div>
+          <ul class="pricing-features">
+            <li>180 Day Supply</li>
+            <li>Free Shipping</li>
+            <li>Huge Savings Included</li>
+          </ul>
+          <a href="order.html" class="pricing-buy-btn btn-accent">Buy Now For $294</a>
+          <div class="pricing-lock">🔒 Secure 60-Day Guarantee</div>
+        </div>
+
+        <!-- Popular -->
+        <div class="pricing-card">
+          <h3>Popular Choice</h3>
+          <div class="pricing-bottles">
+            <img src="../images/default.png" alt="3 Bottles">
+            <div class="qty-badge">X3</div>
+          </div>
+          <div class="price-amount"><sup>$</sup>59</div>
+          <div class="price-per">/ Per Bottle</div>
+          <ul class="pricing-features">
+            <li>90 Day Supply</li>
+            <li>Significant Savings</li>
+          </ul>
+          <a href="order.html" class="pricing-buy-btn btn-dark">Buy Now For $177</a>
+          <div class="pricing-lock">🔒 Secure 60-Day Guarantee</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-label">💬 USER STORIES</div>
+        <h2>Real Stories, Real Results</h2>
+        <p>Join thousands of satisfied users who have transformed their wellness journey.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">I've tried so many things for my blood sugar, but PRODUCT NAME is the first one
+            that actually made a noticeable difference in my daily energy levels.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://i.pravatar.cc/150?u=sarah" alt="Sarah M.">
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Sarah M.</div>
+              <div class="testimonial-verified">✓ Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">The best part is how easy it is to use. Just a few drops and I'm good to go. My
+            cravings for sweets have significantly decreased since I started using it.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://i.pravatar.cc/150?u=david" alt="David K.">
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">David K.</div>
+              <div class="testimonial-verified">✓ Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star-icon dim" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">Highly recommend for anyone looking for natural support. It's gentle yet
+            effective. I've noticed I don't get those afternoon energy crashes anymore.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://i.pravatar.cc/150?u=elena" alt="Elena R.">
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Elena R.</div>
+              <div class="testimonial-verified">✓ Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════════ -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <div class="section-label">❓ FAQ</div>
+        <h2>Common Questions Answered</h2>
+        <p>Find answers to frequently asked questions about our formula and how to use it.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-question">
+            <h3>What exactly is PRODUCT NAME?</h3>
+            <div class="faq-icon"></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              PRODUCT NAME is an all-natural dietary formula created to encourage healthy glucose readings, well-tuned
+              metabolic function, and dependable daily energy through a blend of carefully chosen botanical extracts.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is the mechanism behind it?</h3>
+            <div class="faq-icon"></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It collaborates with the body's inherent glucose-regulation pathways. It assists in keeping blood sugar
+              within a healthy range and reinforces metabolic efficiency.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is it safe to pair with other supplements?</h3>
+            <div class="faq-icon"></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Numerous users successfully incorporate it alongside other dietary supplements. That said, seeking
+              guidance from a medical professional beforehand is always advisable.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Where is it produced?</h3>
+            <div class="faq-icon"></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It is produced in facilities that comply with stringent safety regulations and quality benchmarks inside
+              the USA.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     SCIENTIFIC REFERENCES
+════════════════════════════════════════════════════ -->
+  <section id="sources">
+    <div class="container">
+      <div class="sources-label">SCIENTIFIC REFERENCES</div>
+      <div class="sources-box">
+        <ol>
+          <li>Panossian, A. and Wikman, G., 2008. Pharmacology of Schisandra chinensis Bail.: an overview of Russian
+            research. <i>Journal of ethnopharmacology</i>.</li>
+          <li>D'Souza, J.J. et al., 2014. Anti-diabetic effects of the Indian gooseberry: a review. <i>Journal of Basic
+              and Clinical Physiology</i>.</li>
+          <li>Ishaque, S. et al., 2012. Rhodiola rosea for physical and mental fatigue: a systematic review. <i>BMC
+              complementary and alternative medicine</i>.</li>
+          <li>Katz, D.L. et al., 2011. Cocoa and chocolate in human health and disease. <i>Antioxidants & redox
+              signaling</i>.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-disclaimer">
+        <h2>Final Thoughts</h2>
+        <p>The material presented on this website is intended purely for educational and informational use and should
+          not be interpreted as professional medical guidance. PRODUCT NAME is a dietary supplement created to promote
+          general health. It is not designed to diagnose, treat, remedy, or prevent any disease. Results can differ
+          between individuals.</p>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 PRODUCT NAME All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════
+     WIDGETS (Floating)
+════════════════════════════════════════════════════ -->
+  <!-- Purchase Proof -->
+  <div id="purchase-proof">
+    <div class="proof-img-wrap">
+      <img id="proof-img" src="../images/default.png" alt="Product">
+    </div>
+    <div class="proof-content">
+      <div class="proof-stars">
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      </div>
+      <div id="proof-text" class="proof-name">
+        <span class="name">Anthony</span> from <span class="loc">Ohio</span>
+      </div>
+      <div class="proof-action">purchased 6 bottles</div>
+      <div id="proof-time" class="proof-time">5 minutes ago • Verified</div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════ -->
+  <script>
+    // ── Navbar Scroll Effect ──
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      const scrollBtn = document.getElementById('scroll-top');
+      const progressBar = document.getElementById('scroll-progress');
+
+      // Scroll progress bar logic
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (progressBar) progressBar.style.width = scrolled + "%";
+
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add('visible');
+      } else {
+        scrollBtn.classList.remove('visible');
+      }
+    });
+
+    // ── Scroll to Top ──
+    document.getElementById('scroll-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Mobile Menu Toggle ──
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileMenu = document.getElementById('nav-mobile');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // ── Countdown Timer ──
+    function startTimer(duration, display) {
+      let timer = duration, minutes, seconds;
+      setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) timer = duration;
+      }, 1000);
+    }
+    window.onload = () => {
+      const threeMinutes = 60 * 3;
+      const display = document.querySelector('#countdown-timer');
+      if (display) startTimer(threeMinutes, display);
+    };
+
+    // ── FAQ Accordion ──
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        // Close others
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        // Toggle current
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // ── Purchase Proof Popup ──
+    const items = [
+      { name: "Anthony", location: "Ohio", action: "purchased 6 bottles", time: "2 minutes ago" },
+      { name: "Sarah", location: "California", action: "purchased 3 bottles", time: "7 minutes ago" },
+      { name: "Michael", location: "Florida", action: "purchased 1 bottle", time: "12 minutes ago" },
+      { name: "Emily", location: "Texas", action: "purchased 6 bottles", time: "15 minutes ago" }
+    ];
+    let proofIndex = 0;
+    const proofEl = document.getElementById('purchase-proof');
+    const proofText = document.getElementById('proof-text');
+    const proofAction = document.querySelector('.proof-action');
+    const proofTime = document.getElementById('proof-time');
+
+    function showProof() {
+      const item = items[proofIndex];
+      proofText.innerHTML = `<span class="name">${item.name}</span> from <span class="loc">${item.location}</span>`;
+      proofAction.textContent = item.action;
+      proofTime.textContent = `${item.time} • Verified`;
+
+      proofEl.classList.add('active');
+      setTimeout(() => {
+        proofEl.classList.remove('active');
+      }, 5000);
+
+      proofIndex = (proofIndex + 1) % items.length;
+    }
+
+    // Start proof cycle
+    setTimeout(() => {
+      showProof();
+      setInterval(showProof, 12000);
+    }, 4000);
+
+  </script>
+
+</body>
+
+</html>

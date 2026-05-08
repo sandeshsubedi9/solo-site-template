@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# This is the robots.txt file template
+Sitemap: https://example.com/sitemap.xml
