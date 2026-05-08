@@ -12,10 +12,10 @@
   --clr-primary-dk: #073d24;
   --clr-primary-lt: #e8f5ee;
 
-  /* CTA / Action color — Deep Violet */
-  --clr-cta: #7C3AED;
-  --clr-cta-dk: #5B21B6;
-  --clr-cta-lt: #ede9fe;
+  /* CTA / Action color — Rich Amber Gold */
+  --clr-cta: #D97706;
+  --clr-cta-dk: #B45309;
+  --clr-cta-lt: #fef3c7;
 
   /* Decorative accent — Warm Amber (kept for icons, stars, labels) */
   --clr-accent: #E8A020;
@@ -43,7 +43,7 @@
   --shadow-sm: 0 2px 6px rgba(10, 92, 54, .04);
   --shadow-md: 0 6px 16px rgba(10, 92, 54, .06);
   --shadow-lg: 0 10px 30px rgba(10, 92, 54, .08);
-  --shadow-cta: 0 6px 20px rgba(124, 58, 237, .18);
+  --shadow-cta: 0 6px 20px rgba(217, 119, 6, .28);
 
   --transition: all .3s cubic-bezier(.4, 0, .2, 1);
 }
@@ -155,14 +155,14 @@ h6 {
   border-radius: 2px;
 }
 
-/* Primary CTA button — Deep Violet */
+/* Primary CTA button — Rich Amber Gold */
 .btn-primary-cta {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(135deg, var(--clr-cta) 0%, #9F67FF 50%, var(--clr-cta-dk) 100%);
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 40%, #D97706 100%);
   background-size: 200% auto;
-  color: #fff !important;
+  color: #1a0a00 !important;
   font-family: var(--ff-head);
   font-size: .9rem;
   font-weight: 700;
@@ -180,8 +180,8 @@ h6 {
 .btn-primary-cta:hover {
   background-position: right center;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, .22);
-  color: #fff;
+  box-shadow: 0 10px 28px rgba(217, 119, 6, .35);
+  color: #1a0a00;
 }
 
 .nav-inner .btn-primary-cta {
@@ -192,15 +192,15 @@ h6 {
 
 @keyframes pulse-cta {
   0% {
-    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.5);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.55);
   }
 
   70% {
-    box-shadow: 0 0 0 12px rgba(124, 58, 237, 0);
+    box-shadow: 0 0 0 12px rgba(245, 158, 11, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
   }
 }
 
@@ -402,12 +402,12 @@ h6 {
 .nav-mobile .btn-primary-cta {
   margin-top: 20px;
   justify-content: center;
-  color: #fff !important;
+  color: #1a0a00 !important;
 }
 
 /* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #hero {
-  background: linear-gradient(135deg, #f0f8f4 0%, #fafbff 45%, #f5f0ff 100%);
+  background: linear-gradient(135deg, #f0f8f4 0%, #fffbf0 50%, #fdf6e3 100%);
   min-height: calc(100vh - 68px); /* Full screen height minus navbar */
   display: flex;
   align-items: center;
@@ -428,7 +428,7 @@ h6 {
   pointer-events: none;
 }
 
-/* Soft purple blob — bottom right (ties to CTA) */
+/* Soft amber blob — bottom right (ties to CTA) */
 #hero::after {
   content: '';
   position: absolute;
@@ -436,7 +436,7 @@ h6 {
   right: -100px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.07) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.07) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -962,7 +962,7 @@ h6 {
 
 .ingredient-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
   border-color: var(--clr-primary-lt);
 }
 
@@ -1261,13 +1261,14 @@ h6 {
 
 .pricing-card.featured {
   background: var(--clr-dark);
-  border-color: transparent;
+  border-color: rgba(245, 158, 11, 0.2);
   transform: scale(1.04);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 20px 40px rgba(217, 119, 6, 0.15);
 }
 
 .pricing-card.featured:hover {
-  transform: scale(1.04) translateY(-4px);
+  transform: scale(1.04) translateY(-8px);
+  box-shadow: 0 12px 30px rgba(217, 119, 6, 0.15);
 }
 
 .pricing-card.featured h3,
@@ -1294,8 +1295,8 @@ h6 {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--clr-cta), #9F67FF);
-  color: #fff;
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: #1a0a00;
   font-family: var(--ff-head);
   font-size: .68rem;
   font-weight: 800;
@@ -1304,7 +1305,14 @@ h6 {
   padding: 5px 20px;
   border-radius: var(--radius-pill);
   white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, .45);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.45);
+  animation: badge-pulse 2s infinite;
+}
+
+@keyframes badge-pulse {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.05); box-shadow: 0 6px 16px rgba(217, 119, 6, 0.6); }
+  100% { transform: translateX(-50%) scale(1); }
 }
 
 .pricing-card h3 {
@@ -1396,8 +1404,8 @@ h6 {
   height: 18px;
   flex-shrink: 0;
   border-radius: 50%;
-  background-color: var(--clr-primary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: var(--clr-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%231a0a00'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
   background-size: cover;
 }
 
@@ -1428,22 +1436,22 @@ h6 {
 .pricing-buy-btn.btn-dark:hover {
   background: #1a2e22;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(13, 26, 20, .3);
+  box-shadow: 0 4px 12px rgba(13, 26, 20, .15);
   color: #fff;
 }
 
 .pricing-buy-btn.btn-accent {
-  background: linear-gradient(135deg, var(--clr-cta) 0%, #9F67FF 50%, var(--clr-cta-dk) 100%);
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 40%, #D97706 100%);
   background-size: 200% auto;
-  color: #fff;
+  color: #1a0a00;
   box-shadow: var(--shadow-cta);
 }
 
 .pricing-buy-btn.btn-accent:hover {
   background-position: right center;
   transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(124, 58, 237, .5);
-  color: #fff;
+  box-shadow: 0 8px 24px rgba(217, 119, 6, 0.25);
+  color: #1a0a00;
 }
 
 .pricing-lock {
@@ -1929,7 +1937,7 @@ h6 {
 #scroll-top:hover {
   transform: translateY(-3px);
   background: linear-gradient(135deg, var(--clr-cta), var(--clr-cta-dk));
-  box-shadow: 0 6px 15px rgba(124, 58, 237, .2);
+  box-shadow: 0 6px 15px rgba(217, 119, 6, 0.3);
 }
 
 /* -- RESPONSIVE — Part 2 ------------------------------------ */
